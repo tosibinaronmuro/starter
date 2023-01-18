@@ -1,13 +1,13 @@
 {
   "name": "jobs",
   "version": "1.0.0",
-  "description": "",
+  "description": "task manager project",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "tosiron",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosibinaronmuro/starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tosibinaronmuro/starter/issues"
+  },
+  "homepage": "https://github.com/tosibinaronmuro/starter#readme"
 }
