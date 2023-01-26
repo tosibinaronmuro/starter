@@ -7,4 +7,4 @@ Edit a task,
 and Delete a task 
 Using the boiler plate provided by john smilga 
 Created a dotenv file to store my connection strings
-Also made a schema for the mongoose thingy
+Used mongoose schema for the mongodb collection 
