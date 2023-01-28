@@ -5,15 +5,13 @@ const app=express()
 require('dotenv').config()
 
 app.use(express.json())
-app.use(express.static('/public'))
+app.use(express.static('./public'))
 
 
 
 app.use('/api/v1/tasks',tasks)
 
-app.get('/',(req,res)=>{
-    res.status(200).send('hello there')
-})
+ 
 
 const port=5000
 
