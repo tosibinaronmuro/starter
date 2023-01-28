@@ -4,15 +4,18 @@ const getAllTasks = (req, res) => {
 };
 
 const createNewTask = async (req, res) => {
-  const task = await Task.create(req.body);
-  const { newTask } = req.body;
-  console.log(req.body);
-  if (!newTask) {
-    return res
-      .status(401)
-      .json({ success: false, msg: "cannot add void task" });
+  
+  try {
+    const task = await Task.create(req.body);
+    if (!req.body) {
+      return res
+        .status(401)
+        .json({ success: false, msg: "cannot add void task" });
+    }
+    res.status(201).json({ success: true, data: { task } });
+  } catch (error) {
+    res.status(500).json({msg:error})
   }
-  res.status(200).json({ success: true, data: { task } });
 };
 
 const getSingleTask = (req, res) => {
