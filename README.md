@@ -9,3 +9,4 @@ Using the boiler plate provided by john smilga
 Created a dotenv file to store my connection strings
 Used mongoose schema for the mongodb collection 
 Used mongoose model and query functions to perform basic CRUD operations
+Also used Mongoose Error handling to handle various error types 
